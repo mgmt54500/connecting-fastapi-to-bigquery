@@ -176,13 +176,15 @@ def dbwritetest(bq: bigquery.Client = Depends(get_bq_client)):
 
 1. Input the following command on the command line to start your API locally
 
-    `poetry run uvicorn main:app --reload --port 8080`
+```bash
+poetry run uvicorn main:app --reload --port 8080
+```
 
 2. Use the Web Preview to test your `dbwritetest` endpoint
 
 3. In another tab, open BigQuery and see if your row was correctly written to your table
 
-4. Press Ctrl+C to stop your server
+4. Press Ctrl+C in the Cloud Shell terminal to stop your server
 
 ---
 
