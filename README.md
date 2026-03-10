@@ -62,7 +62,10 @@ Create a new dataset and table using the BigQuery interface.
     * Click **Create Dataset**.
 
 3. At the top of the BigQuery interface, choose the **Untitled query** tab
-4. Copy the following query and paste it into the tab. **ENSURE YOU UPDATE YOUR PROJECT NAME**
+4. Copy the following query and paste it into the tab
+
+> [!IMPORTANT]
+> You MUST update your Google Cloud project name in the code below for this to work!
 
 ```sql
 CREATE TABLE `YOUR_PROJECT.calculator.api_logs` (
@@ -122,8 +125,8 @@ Open `main.py` in the Cloud Shell Editor.
 
 3. AT THE END OF YOUR FILE, add a new endpoint to your API by copy and pasting the following:
 
-    > [!IMPORTANT]
-    > You MUST update your Google Cloud project name in the code below for this to work!
+> [!IMPORTANT]
+> You MUST update your Google Cloud project name in the code below for this to work!
 
     ```python
     @app.get("/dbwritetest", status_code=200)
