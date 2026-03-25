@@ -42,12 +42,10 @@ We need to tell our Cloud Run service which Service Account to use when making a
 1. Search for Cloud Run
 2. Choose **Services**
 3. Choose your **calculator-api** service
-4. Click the **Revisions** tab
-5. Choose the latest revision
-6. On the panel that opens to the right, choose the **Security** tab
-7. Click the name of the existing (default) security account
-8. On the new page, type `fastapi-bq-accessor` for the Service Account name and click Save
-9. Enter a description and click Save
+4. At the top of the screen, choose **✏️ Edit & deploy new revision**
+5. Choose the **Security** tab
+6. Choose `fastapi-bq-accessor` from the Service Account dropdown
+7. Click the **Deploy** button
 
 ---
 
